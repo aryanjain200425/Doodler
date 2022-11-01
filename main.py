@@ -16,8 +16,7 @@ myfont = pygame.font.SysFont('Comic Sans MS', 30)
 
 # Title and caption
 pygame.display.set_caption("Doodler")
-# icon = pygame.image.load("game-controller.png")e
-# pygame.display.set_icon(icon)
+
 
 
 isDrawing = False
@@ -31,28 +30,11 @@ drawColor = (0,0,0)
 
 width  = 2
 
-# vid = cv2.VideoCapture(0)
 
 while running:
     
     prev_mouse_x , prev_mouse_y = pygame.mouse.get_pos()
 
-    # ret,frame = vid.read()
-
-    # frame = cv2.flip(frame,1)
-
-    # image = im.fromarray(frame)
-
-    # image = image.resize((800,800))
-
-    # mode = image.mode
-    # size = image.size
-    # data = image.tobytes()
-    
-    # py_image = pygame.image.fromstring(data,size,mode)
-
-
-    # screen.blit(py_image, (0,0))
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -90,7 +72,7 @@ while running:
     pygame.display.update()
 
 
-# vid.release()
+
 cv2.destroyAllWindows()
 time.sleep(9)
 pygame.quit()
