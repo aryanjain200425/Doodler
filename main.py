@@ -30,31 +30,31 @@ drawColor = (0,0,0)
 
 width  = 2
 
-vid = cv2.VideoCapture(0)
+# vid = cv2.VideoCapture(0)
 
 
 while running:
     
     prev_mouse_x , prev_mouse_y = pygame.mouse.get_pos()
 
-    ret, frame = vid.read()
+    # ret, frame = vid.read()
 
-    frame = image = cv2.flip(frame, 1)
+    # frame = image = cv2.flip(frame, 1)
 
-    image = im.fromarray(frame)
+    # image = im.fromarray(frame)
 
-    image = image.resize((800,800))
+    # image = image.resize((800,800))
 
 
-    mode = image.mode
+    # mode = image.mode
 
-    size = image.size
+    # size = image.size
 
-    data = image.tobytes()
+    # data = image.tobytes()
 
-    py_image = pygame.image.fromstring(data, size, mode)
+    # py_image = pygame.image.fromstring(data, size, mode)
 
-    screen.blit(py_image, (0,0))
+    # screen.blit(py_image, (0,0))
 
 
 
