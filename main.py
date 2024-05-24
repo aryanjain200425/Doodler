@@ -30,32 +30,11 @@ drawColor = (0,0,0)
 
 width  = 2
 
-# vid = cv2.VideoCapture(0)
 
 
 while running:
     
     prev_mouse_x , prev_mouse_y = pygame.mouse.get_pos()
-
-    # ret, frame = vid.read()
-
-    # frame = image = cv2.flip(frame, 1)
-
-    # image = im.fromarray(frame)
-
-    # image = image.resize((800,800))
-
-
-    # mode = image.mode
-
-    # size = image.size
-
-    # data = image.tobytes()
-
-    # py_image = pygame.image.fromstring(data, size, mode)
-
-    # screen.blit(py_image, (0,0))
-
 
 
     for event in pygame.event.get():
@@ -84,7 +63,6 @@ while running:
     if isDrawing:
         mouse_X , mouse_Y = pygame.mouse.get_pos()
         pygame.draw.line(screen,drawColor,(prev_mouse_x,prev_mouse_y), (mouse_X,mouse_Y), width)
-        # pygame.draw.circle(surface=screen,color= drawColor,center=(mouse_X, mouse_Y),radius= cirlceRadius)
 
 
 
